@@ -1,6 +1,6 @@
 import React from "react"
 
-import Icons from "./Icons"
+import Icons from "../icons"
 
 class ContactForm extends React.Component {
   render() {

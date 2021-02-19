@@ -1,9 +1,9 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import ClienteSlider from "../components/slider"
-import WhatsappApi from "../components/wpp"
-import Scroll from "../components/scroll"
+import ClienteSlider from "../components/body/slider"
+import WhatsappApi from "../components/contact/wpp"
+import Scroll from "../components/body/scroll"
 import SEO from "../components/seo"
 
 import Typewriter from "typewriter-effect"
