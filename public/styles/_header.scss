@@ -1,0 +1,42 @@
+header {
+  background-color: $azul_escuro;
+  display: block;
+  height: 100px;
+
+  .logo {
+    img {
+      position: fixed;
+      margin-left: -350px;
+      top: 25px;
+      width: 140px;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 9997;
+    }
+  }
+  .top-menu {
+    display: flex;
+    justify-content: space-between;
+
+    .get-started {
+      a {
+        width: 160px;
+        height: 47px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 47px;
+        display: block;
+        background: #8953b7;
+        border-radius: 4px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+}

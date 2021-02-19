@@ -1,0 +1,29 @@
+footer {
+  padding: 120px 0 45px;
+  background-color: $cor_footer;
+  z-index: 1;
+
+  .copyright {
+    text-align: center;
+
+    img {
+      max-width: 150px;
+      margin: 0 auto;
+    }
+  }
+  .row {
+    margin-left: 187px;
+    .info,
+    .desc {
+      text-align: center;
+      color: #fff;
+      margin: 0 auto;
+      a {
+        color: #fff;
+        &:hover {
+          color: $azul_hover;
+        }
+      }
+    }
+  }
+}
