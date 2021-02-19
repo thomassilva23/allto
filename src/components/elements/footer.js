@@ -2,7 +2,7 @@ import React from "react"
 
 import "../../../static/styles/main.scss"
 
-import Icons from "../icons"
+import Icons from "../Icons"
 
 import logo_footer from "../../../static/images/logos/logo-footer.png"
 

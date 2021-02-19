@@ -4,7 +4,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import Data from "../../content/clientes"
+import Data from "../../Content/clientes"
 
 const ClienteSlider = () => {
   const settings = {
