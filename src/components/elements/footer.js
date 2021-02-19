@@ -1,10 +1,10 @@
 import React from "react"
 
-import "../../static/styles/main.scss"
+import "../../../static/styles/main.scss"
 
 import Icons from "../icons"
 
-import logo_footer from "../../static/images/logos/logo-footer.png"
+import logo_footer from "../../../static/images/logos/logo-footer.png"
 
 const Footer = () => (
   <footer>

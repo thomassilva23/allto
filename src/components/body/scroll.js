@@ -3,10 +3,10 @@ import React, { useState } from "react"
 import ContactForm from "../contact/form"
 import styled, { createGlobalStyle } from "styled-components"
 
-import img01 from "../../static/images/scroll/digital1.jpg"
-import img02 from "../../static/images/scroll/phydigital1.jpg"
-import img03 from "../../static/images/scroll/sites1.jpg"
-import img04 from "../../static/images/scroll/social1.jpg"
+import img01 from "../../../static/images/scroll/digital1.jpg"
+import img02 from "../../../static/images/scroll/phydigital1.jpg"
+import img03 from "../../../static/images/scroll/sites1.jpg"
+import img04 from "../../../static/images/scroll/social1.jpg"
 
 const Global = createGlobalStyle`
   body {
