@@ -5,7 +5,7 @@ import Icons from "../icons"
 class ContactForm extends React.Component {
   render() {
     return (
-      <form action={this.props.action} method="post">
+      <form action={this.props.action} method="post" data-netlify="true">
         <div className={"container"}>
           <div className={"input_form"}>
             <input type="text" name="field1" placeholder="Seu nome" />
