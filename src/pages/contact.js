@@ -1,25 +1,60 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Icons from "../components/Icons"
 
-const ContactPage = () => (
-    <Layout>
-        <SEO title="Contact"/>
+class ContactForm extends React.Component {
+  render() {
+    return (
+      <form
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contato"
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
+
         <div className={"container"}>
-            <div className={"content"}>
-                <div className={"title"}>
-                    <h1>Contact</h1>
-                </div>
-
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit. Aenean commodo ligula eget dolor. Aenean massa.
-                    Cum sociis natoque penatibus et magnis dis parturient
-                    montes, nascetur ridiculus mus. Donec quam felis,
-                    ultricies nec, pellentesque eu, pretium quis, sem.</p>
-            </div>
+          <div className={"input_form"}>
+            <input type="text" name="field1" placeholder="Seu nome" />
+            <input type="email" name="field2" placeholder="Email" />
+            <textarea name="field3" placeholder="Escreva sua mensagem" />
+          </div>
+          <div className={"data_form"}>
+            <h2>Contate-nos!</h2>
+            <p>Gostaríamos muito de ouvir o que você tem a dizer.</p>
+            <ul className={"social"}>
+              <li>
+                <a href="https://fb.me/allto.digital" title={"Facebook"}>
+                  <Icons.Facebook />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/allto.digital/"
+                  title={"Instagram"}
+                >
+                  <Icons.Instagram />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/allto-digital"
+                  title={"Linedkin"}
+                >
+                  <Icons.Linkedin />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </Layout>
-)
+        <button id="btn_send" type="submit">
+          <span class="noselect">Enviar</span>
+          <div id="circle" />
+        </button>
+      </form>
+    )
+  }
+}
 
-export default ContactPage
+export default ContactForm
