@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import ClienteSlider from "../components/body/slider"
+import ClientSlider from "../components/body/slider"
 import WhatsappApi from "../components/contact/wpp"
 import Scroll from "../components/body/scroll"
 import SEO from "../components/seo"
@@ -28,7 +28,7 @@ const IndexPage = () => {
 
       <WhatsappApi />
 
-      <ClienteSlider />
+      <ClientSlider />
 
       <Scroll />
     </Layout>

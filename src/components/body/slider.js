@@ -1,12 +1,31 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Slider from "react-slick"
 
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import Data from "../../Content/clientes"
+import Data from "../../content/clients"
 
-const ClienteSlider = () => {
+const ClientSlider = () => {
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query ClientList {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              title
+              slug
+              date
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const clientList = allMarkdownRemark.edges
+
   const settings = {
     dots: false,
     infinite: true,
@@ -21,8 +40,11 @@ const ClienteSlider = () => {
   }
 
   return (
-    <div className="sliderClientes">
+    <div className="sliderClients">
       <Slider {...settings}>
+        {clientList.map({
+          node: { frontmatter: { title, slug, date } },
+        })}
         {Data.map(item => (
           <a className="sliderItem" key={item.title} href={item.channel}>
             <img src={item.picture} alt={item.title} />
@@ -33,4 +55,4 @@ const ClienteSlider = () => {
   )
 }
 
-export default ClienteSlider
+export default ClientSlider

@@ -16,6 +16,16 @@ module.exports = {
         path: `${__dirname}/static/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `clients`,
+        path: `${__dirname}/clients`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -48,5 +58,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }
