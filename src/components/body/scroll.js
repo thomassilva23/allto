@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import ContactForm from "../contact/form"
+import ContactForm from "../../pages/contact"
 import styled, { createGlobalStyle } from "styled-components"
 
 import img01 from "../../../static/images/scroll/digital1.jpg"
