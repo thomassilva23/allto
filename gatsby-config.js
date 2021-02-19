@@ -3,7 +3,7 @@ module.exports = {
     title: "Allto Digital",
     description: `Site para a Allto`,
     author: `@thomas`,
-    siteUrl: `https://allto.digital`,
+    siteUrl: `https://allto-digital.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Allto Digital`,
+        short_name: `AlltoDigital`,
         start_url: `/`,
         background_color: `#002855`,
         theme_color: `#0067A0`,
@@ -43,9 +43,8 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
