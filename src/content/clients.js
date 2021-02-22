@@ -1,5 +1,5 @@
-/*const Data = [
-  {
+const Data = [
+  /*{
     title: "Cotry",
     channel: "https://cotry.com.br/",
     picture: "./images/clients/cotry.png",
@@ -97,8 +97,7 @@
       facebook: "https://www.facebook.com/7way.tecnologia.servicos/",
       linkedin: "https://www.linkedin.com/company/7way/",
     },
-  },
+  },*/
 ]
 
 export default Data
-*/

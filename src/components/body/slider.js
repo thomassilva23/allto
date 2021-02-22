@@ -13,10 +13,13 @@ const ClientSlider = () => {
       allMarkdownRemark {
         edges {
           node {
-            frontmatter {
-              title
+            fields {
               slug
+            }
+            frontmatter {
               date
+              description
+              title
             }
           }
         }
@@ -42,15 +45,28 @@ const ClientSlider = () => {
   return (
     <div className="sliderClients">
       <Slider {...settings}>
-        {clientList.map({
-          node: { frontmatter: { title, slug, date } },
-        })}
         {Data.map(item => (
           <a className="sliderItem" key={item.title} href={item.channel}>
             <img src={item.picture} alt={item.title} />
           </a>
         ))}
       </Slider>
+
+      {clientList.map(
+        ({
+          node: {
+            frontmatter: { date, description, title },
+            fields: { slug },
+          },
+        }) => (
+          <div
+            slug={slug}
+            date={date}
+            description={description}
+            title={title}
+          />
+        )
+      )}
     </div>
   )
 }
