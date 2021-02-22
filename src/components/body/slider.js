@@ -5,21 +5,17 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import Data from "../../content/clients"
-
 const ClientSlider = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query ClientList {
       allMarkdownRemark {
         edges {
           node {
-            fields {
-              slug
-            }
             frontmatter {
-              date
               description
               title
+              image
+              url
             }
           }
         }
@@ -45,28 +41,18 @@ const ClientSlider = () => {
   return (
     <div className="sliderClients">
       <Slider {...settings}>
-        {Data.map(item => (
-          <a className="sliderItem" key={item.title} href={item.channel}>
-            <img src={item.picture} alt={item.title} />
-          </a>
-        ))}
+        {clientList.map(
+          ({
+            node: {
+              frontmatter: { description, title, image, url },
+            },
+          }) => (
+            <a className="sliderItem" key={title} href={url}>
+              <img src={image} alt={description} />
+            </a>
+          )
+        )}
       </Slider>
-
-      {clientList.map(
-        ({
-          node: {
-            frontmatter: { date, description, title },
-            fields: { slug },
-          },
-        }) => (
-          <div
-            slug={slug}
-            date={date}
-            description={description}
-            title={title}
-          />
-        )
-      )}
     </div>
   )
 }
