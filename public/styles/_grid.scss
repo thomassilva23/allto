@@ -151,10 +151,8 @@
   }
 }
 
-@media only screen and (min-width: 60em) {
-  /* 960px */
+@media only screen and (min-width: 1300px) {
   .container {
-    width: 75%;
-    max-width: 60rem;
+    width: 70%;
   }
 }

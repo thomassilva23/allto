@@ -82,5 +82,39 @@ footer {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
+  footer {
+    padding: 120px 0 45px;
+    background-color: $cor_footer;
+    z-index: 1;
+
+    .copyright {
+      text-align: center;
+
+      img {
+        max-width: 150px;
+        margin: 10px auto;
+      }
+    }
+    .row {
+      margin-left: 20%;
+      padding-left: 6%;
+      .info {
+        text-align: center;
+        color: #fff;
+        margin: 15px auto 15px;
+      }
+      .desc {
+        text-align: center;
+        color: #fff;
+        margin: 0 auto;
+        a {
+          color: #fff;
+          &:hover {
+            color: $azul_hover;
+          }
+        }
+      }
+    }
+  }
 }

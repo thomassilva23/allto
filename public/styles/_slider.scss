@@ -37,5 +37,19 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
+  .sliderClients {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: $cor_footer;
+    h2 {
+      color: #fff;
+    }
+    img {
+      margin: 20px auto;
+      padding-left: 40px;
+      padding-right: 40px;
+      width: 350px;
+    }
+  }
 }
