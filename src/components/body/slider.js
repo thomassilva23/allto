@@ -8,7 +8,9 @@ import "slick-carousel/slick/slick-theme.css"
 const ClientSlider = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query ClientList {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(clients)/" } }
+      ) {
         edges {
           node {
             frontmatter {

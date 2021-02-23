@@ -12,9 +12,9 @@ body {
     height: 450px;
 
     h1 {
-      margin-top: 400px;
-      font-size: 200px;
-      text-align: left;
+      margin: 19% auto;
+      font-size: 80px;
+      text-align: center;
       text-transform: uppercase;
       color: #fff;
     }
@@ -88,57 +88,7 @@ body {
     -ms-user-select: none;
     user-select: none;
   }
-  //Botão fechar form
-  #btn_close {
-    margin: 50px auto 80px;
-    width: 60px;
-    height: 40px;
-    background: $azul_claro;
-    border: none;
-    border-radius: 10px;
-    color: #eee;
-    font-size: 30px;
-    position: relative;
-    transition: 1s;
-    -webkit-tap-highlight-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    padding-top: 0;
-  }
 
-  #btn_close #circle {
-    width: 5px;
-    height: 5px;
-    background: transparent;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    overflow: hidden;
-    transition: 500ms;
-  }
-  #btn_close:hover {
-    background: transparent;
-  }
-  #btn_close:hover #circle {
-    height: 40px;
-    width: 60px;
-    left: 0;
-    border-radius: 0;
-    border-bottom: 2px solid #eee;
-  }
-  //Classe do span do botão
-  .noselectClose {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
   //Whatsapp api
   /* for desktop */
   .whatsapp_float {
@@ -149,29 +99,125 @@ body {
     right: 40px;
     background-color: transparent;
     color: #fff;
-    border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
     z-index: 100;
   }
 
   .whatsapp-icon {
     margin-top: 16px;
   }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: $font_family;
+    color: $cor_fonte;
+    background-color: $azul_escuro;
 
-  /* for mobile */
-  @media screen and (max-width: 767px) {
-    .whatsapp-icon {
-      margin-top: 10px;
+    .page-header {
+      background-color: $azul_escuro;
+      height: 250px;
+
+      h1 {
+        margin: 10% auto;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+    .social {
+      margin: 2rem auto;
+      width: 300px;
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      li {
+        width: 40px;
+        a {
+          color: #fff;
+
+          &:hover {
+            color: $azul_hover;
+          }
+        }
+      }
+    }
+    //Botão padrão
+    #btn {
+      margin: 50px auto;
+      width: 150px;
+      height: 50px;
+      background: $azul_claro;
+      border: none;
+      border-radius: 10px;
+      color: #eee;
+      font-size: 25px;
+      position: relative;
+      transition: 1s;
+      -webkit-tap-highlight-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      padding-top: 0;
     }
 
+    #btn #circle {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      overflow: hidden;
+      transition: 500ms;
+    }
+    #btn:hover {
+      background: transparent;
+    }
+    #btn:hover #circle {
+      height: 50px;
+      width: 150px;
+      left: 0;
+      border-radius: 0;
+      border-bottom: 2px solid #eee;
+    }
+    //Classe do span do botão
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .whatsapp-icon,
     .whatsapp_float {
-      width: 40px;
-      height: 40px;
-      bottom: 20px;
-      right: 10px;
-      font-size: 22px;
+      width: 50px;
+      margin-right: -2rem;
+      margin-bottom: -2rem;
     }
   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

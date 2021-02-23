@@ -20,7 +20,7 @@ const Footer = () => (
             <div className={"col-sm-3"}>
               <h4 className={"info"}>Telefone</h4>
               <p className={"desc"}>
-                <a href={"tel:+5551984179025"}>(51) 98471.9025</a>
+                <a href={"tel:+5551984179025"}>(51)98471.9025</a>
               </p>
             </div>
           </div>
@@ -32,7 +32,11 @@ const Footer = () => (
               <h4 className={"info"}>Endereço</h4>
               <p className={"desc"}>
                 <a href={"https://goo.gl/maps/Rm5tL1CwnTxbPv3H6"}>
-                  Rua Nogueira, 115 <br /> Novo Hamburgo, RS | 93520-320
+                  Rua Nogueira, 115
+                  <br />
+                  Novo Hamburgo, RS
+                  <br />
+                  93520-320
                 </a>
               </p>
             </div>

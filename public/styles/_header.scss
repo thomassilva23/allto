@@ -22,21 +22,49 @@ header {
   .top-menu {
     display: flex;
     justify-content: space-between;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: $azul_escuro;
+    display: block;
+    height: 100px;
 
-    .get-started {
-      a {
-        width: 160px;
-        height: 47px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 47px;
-        display: block;
-        background: #8953b7;
-        border-radius: 4px;
-        text-align: center;
-        color: #ffffff;
+    .logo {
+      img {
+        margin-left: 19%;
+        margin-right: 56%;
+        position: fixed;
+        width: 140px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: transparent;
+        border: none;
+        z-index: 9997;
       }
     }
+    .top-menu {
+      display: flex;
+      justify-content: space-between;
+    }
   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

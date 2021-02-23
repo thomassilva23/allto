@@ -14,9 +14,16 @@ const IndexPage = () => {
       <SEO title="Allto Digital" />
       <div className={"page-header home"}>
         <h1>
+          Digitalização e automação <br /> de processos
           <Typewriter
             options={{
-              strings: ["Allto Digital", "conecta", "você"],
+              strings: [
+                "industriais",
+                "administrativos",
+                "financeiros",
+                "de RH",
+                "e outras áreas de back-office",
+              ],
               autoStart: true,
               loop: true,
             }}

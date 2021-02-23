@@ -1,12 +1,8 @@
 import React, { useState } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import ContactForm from "../../pages/contact"
 import styled, { createGlobalStyle } from "styled-components"
-
-import img01 from "../../../static/images/scroll/digital1.jpg"
-import img02 from "../../../static/images/scroll/phydigital1.jpg"
-import img03 from "../../../static/images/scroll/sites1.jpg"
-import img04 from "../../../static/images/scroll/social1.jpg"
 
 const Global = createGlobalStyle`
   body {
@@ -27,7 +23,7 @@ const ContatoForm = styled.nav`
   top: 0;
   right: 0;
   width: 100%;
-  transition: all 2000ms;
+  transition: all 1500ms;
   transform: ${({ nav }) => (nav ? "translateY(0)" : "translateY(100%)")};
   opacity: ${({ nav }) => (nav ? "1" : "0")};
   z-index: 9998;
@@ -51,17 +47,81 @@ const ContatoForm = styled.nav`
     }
   }
 `
-const Scroll = () => {
+
+const ServiceSlider = () => {
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query ServiceList {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(service)/" } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              description
+              title
+              image
+            }
+          }
+        }
+      }
+    }
+  `)
+
   const [nav, showNav] = useState(false)
+
+  const serviceList = allMarkdownRemark.edges
+
   return (
     <>
       <Global />
       <div className={"service"}>
         <article>
-          <figure>
-            <img alt="RV" src={img01} />
-          </figure>
-          <section>
+          {serviceList.map(
+            ({
+              node: {
+                frontmatter: { description, title, image },
+              },
+            }) => (
+              <React.Fragment>
+                <figure>
+                  <img src={image} alt={title} />
+                </figure>
+                <section>
+                  <div>
+                    <h1>{title}</h1>
+                    <p>
+                      {description}
+                      <div id="btn" nav={nav} onClick={() => showNav(!nav)}>
+                        <span class="noselect">Saiba mais</span>
+                        <div id="circle" />
+                      </div>
+                      <ContatoForm nav={nav}>
+                        <ContactForm />
+                        <div
+                          id="btn_close"
+                          nav={nav}
+                          onClick={() => showNav(!nav)}
+                        >
+                          <span class="noselectClose">X</span>
+                          <div id="circle" />
+                        </div>
+                      </ContatoForm>
+                    </p>
+                  </div>
+                </section>
+              </React.Fragment>
+            )
+          )}
+        </article>
+      </div>
+    </>
+  )
+}
+
+export default ServiceSlider
+
+/*<div>  
+  <section>
             <div>
               <h1>Digitalização</h1>
               <p>
@@ -152,6 +212,4 @@ const Scroll = () => {
         </article>
       </div>
     </>
-  )
-}
-export default Scroll
+  */
