@@ -1,11 +1,3 @@
-.sliderClients {
-  margin: 0 auto;
-  margin-top: 50px;
-  background-color: $cor_footer;
-  h2 {
-    color: #fff;
-  }
-}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .sliderClients {
@@ -46,10 +38,26 @@
       color: #fff;
     }
     img {
-      margin: 20px auto;
-      padding-left: 40px;
-      padding-right: 40px;
-      width: 350px;
+      margin: 30px auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 250px;
+    }
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .sliderClients {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: $cor_footer;
+    h2 {
+      color: #fff;
+    }
+    img {
+      margin: 40px auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 280px;
     }
   }
 }

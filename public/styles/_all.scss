@@ -1,113 +1,6 @@
 @import "variables";
 
 $break-small: 719px;
-
-body {
-  font-family: $font_family;
-  color: $cor_fonte;
-  background-color: $azul_escuro;
-
-  .page-header {
-    background-color: $azul_escuro;
-    height: 450px;
-
-    h1 {
-      margin: 19% auto;
-      font-size: 80px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #fff;
-    }
-  }
-  .social {
-    margin: 2rem auto;
-    width: 300px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    li {
-      width: 40px;
-      a {
-        color: #fff;
-
-        &:hover {
-          color: $azul_hover;
-        }
-      }
-    }
-  }
-  //Botão padrão
-  #btn {
-    margin: 50px auto;
-    width: 350px;
-    height: 50px;
-    background: $azul_claro;
-    border: none;
-    border-radius: 10px;
-    color: #eee;
-    font-size: 40px;
-    position: relative;
-    transition: 1s;
-    -webkit-tap-highlight-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-    padding-top: 0;
-  }
-
-  #btn #circle {
-    width: 5px;
-    height: 5px;
-    background: transparent;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    overflow: hidden;
-    transition: 500ms;
-  }
-  #btn:hover {
-    background: transparent;
-  }
-  #btn:hover #circle {
-    height: 50px;
-    width: 350px;
-    left: 0;
-    border-radius: 0;
-    border-bottom: 2px solid #eee;
-  }
-  //Classe do span do botão
-  .noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  //Whatsapp api
-  /* for desktop */
-  .whatsapp_float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    font-size: 30px;
-    z-index: 100;
-  }
-
-  .whatsapp-icon {
-    margin-top: 16px;
-  }
-}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
@@ -227,11 +120,11 @@ body {
 
     .page-header {
       background-color: $azul_escuro;
-      height: 360px;
+      height: 350px;
 
       h1 {
-        margin: 15% auto;
-        font-size: 70px;
+        margin: 10% auto;
+        font-size: 60px;
         text-align: center;
         text-transform: uppercase;
         color: #fff;
@@ -305,6 +198,132 @@ body {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+    }
+    //Whatsapp api
+    /* for desktop */
+    .whatsapp_float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: transparent;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      z-index: 100;
+    }
+
+    .whatsapp-icon {
+      margin-top: 16px;
+    }
+  }
+}
+@media only screen and (min-width: 1900px) {
+  body {
+    font-family: $font_family;
+    color: $cor_fonte;
+    background-color: $azul_escuro;
+
+    .page-header {
+      background-color: $azul_escuro;
+      height: 510px;
+
+      h1 {
+        margin: 15% auto;
+        font-size: 80px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+    .social {
+      margin: 2rem auto;
+      width: 300px;
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      li {
+        width: 40px;
+        a {
+          color: #fff;
+
+          &:hover {
+            color: $azul_hover;
+          }
+        }
+      }
+    }
+    //Botão padrão
+    #btn {
+      margin: 50px auto;
+      width: 350px;
+      height: 50px;
+      background: $azul_claro;
+      border: none;
+      border-radius: 10px;
+      color: #eee;
+      font-size: 40px;
+      position: relative;
+      transition: 1s;
+      -webkit-tap-highlight-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      padding-top: 0;
+    }
+
+    #btn #circle {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      overflow: hidden;
+      transition: 500ms;
+    }
+    #btn:hover {
+      background: transparent;
+    }
+    #btn:hover #circle {
+      height: 50px;
+      width: 350px;
+      left: 0;
+      border-radius: 0;
+      border-bottom: 2px solid #eee;
+    }
+    //Classe do span do botão
+    .noselect {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    //Whatsapp api
+    /* for desktop */
+    .whatsapp_float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: transparent;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      z-index: 100;
+    }
+
+    .whatsapp-icon {
+      margin-top: 16px;
     }
   }
 }
