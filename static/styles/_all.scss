@@ -1,13 +1,12 @@
-@import "variables";
-
-$break-small: 719px;
+body {
+  font-family: $font_family;
+  color: $cor_fonte;
+  background-color: $azul_escuro;
+  overflow-y: hidden;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
-    font-family: $font_family;
-    color: $cor_fonte;
-    background-color: $azul_escuro;
-
     .page-header {
       background-color: $azul_escuro;
       height: 250px;
@@ -16,7 +15,6 @@ $break-small: 719px;
         margin: 10% auto;
         font-size: 40px;
         text-align: center;
-        text-transform: uppercase;
         color: #fff;
       }
     }
@@ -114,10 +112,6 @@ $break-small: 719px;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1300px) {
   body {
-    font-family: $font_family;
-    color: $cor_fonte;
-    background-color: $azul_escuro;
-
     .page-header {
       background-color: $azul_escuro;
       height: 350px;
@@ -151,13 +145,13 @@ $break-small: 719px;
     //Botão padrão
     #btn {
       margin: 50px auto;
-      width: 350px;
+      width: 250px;
       height: 50px;
       background: $azul_claro;
       border: none;
       border-radius: 10px;
       color: #eee;
-      font-size: 40px;
+      font-size: 35px;
       position: relative;
       transition: 1s;
       -webkit-tap-highlight-color: transparent;
@@ -185,7 +179,7 @@ $break-small: 719px;
     }
     #btn:hover #circle {
       height: 50px;
-      width: 350px;
+      width: 250px;
       left: 0;
       border-radius: 0;
       border-bottom: 2px solid #eee;
@@ -221,10 +215,6 @@ $break-small: 719px;
 }
 @media only screen and (min-width: 1900px) {
   body {
-    font-family: $font_family;
-    color: $cor_fonte;
-    background-color: $azul_escuro;
-
     .page-header {
       background-color: $azul_escuro;
       height: 510px;
