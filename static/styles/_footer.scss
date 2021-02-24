@@ -1,19 +1,21 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   footer {
-    padding: 120px 0 45px;
+    padding: 20% 0 15%;
     background-color: $cor_footer;
     z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
     .copyright {
       img {
         max-width: 130px;
-        margin: 0 auto;
       }
     }
     .row {
       display: grid;
-      margin: 30px 60px;
+      margin: 10% auto;
 
       .info {
         color: #fff;

@@ -10,7 +10,6 @@ class ContactForm extends React.Component {
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
-        action="/thanks"
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contato" />
@@ -23,7 +22,13 @@ class ContactForm extends React.Component {
           </div>
           <div className={"data_form"}>
             <h2>Contate-nos!</h2>
-            <p>Gostaríamos muito de ouvir o que você tem a dizer.</p>
+            <p>
+              Gostaríamos muito de ouvir o que você tem a dizer.
+              <br />
+              Entraremos em contato com você dentro de 24 horas!
+              <br />
+              Fique ligado na sua caixa de emails.
+            </p>
             <ul className={"social"}>
               <li>
                 <a href="https://fb.me/allto.digital" title={"Facebook"}>

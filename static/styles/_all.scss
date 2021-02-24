@@ -90,9 +90,16 @@ body {
 
     .whatsapp-icon,
     .whatsapp_float {
-      width: 50px;
-      margin-right: -2rem;
-      margin-bottom: -2rem;
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: transparent;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      z-index: 100;
     }
   }
 }

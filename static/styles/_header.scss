@@ -6,10 +6,12 @@ header {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     .logo {
       img {
-        margin-left: 19%;
-        margin-right: 56%;
+        margin: 5% 18%;
         position: fixed;
         width: 140px;
         height: 70px;
