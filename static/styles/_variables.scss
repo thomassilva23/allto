@@ -5,7 +5,9 @@ $azul_claro: #007ebb;
 $cor_fonte: #797283;
 $cor_footer: #121314;
 
-$font_family: "Montserrat", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+$font-family: "Montserrat", sans-serif;
 
 $azul_hover: #1fa1f2;
 

@@ -127,7 +127,7 @@ html {
     }
     p {
       color: #fff;
-      text-align: right;
+      text-align: center;
       width: 100%;
       font-weight: 200;
       font-size: calc(1.5vmin + 1.75vmax);
@@ -522,6 +522,7 @@ html {
       width: 100%;
       font-weight: 200;
       font-size: calc(1.2vmin + 1.5vmax);
+      line-height: calc(1.2vmin + 1.5vmax);
       margin: 0 auto;
     }
     a {
@@ -695,7 +696,7 @@ html {
     h1 {
       color: #fff;
       margin: 7% auto;
-      font-size: 75px;
+      font-size: 60px;
       text-transform: uppercase;
     }
     h2 {
@@ -712,7 +713,8 @@ html {
       text-align: right;
       width: 100%;
       font-weight: 200;
-      font-size: calc(1.5vmin + 1.75vmax);
+      font-size: calc(1vmin + 1.4vmax);
+      line-height: calc(1.5vmin + 1.85vmax);
       margin: 0 auto;
     }
     a {

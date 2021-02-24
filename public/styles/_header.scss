@@ -61,6 +61,25 @@ header {
         z-index: 9997;
       }
     }
+    .sml-logo {
+      img {
+        object-fit: cover;
+        object-position: 148px 0;
+
+        position: fixed;
+        margin-left: -250px;
+        top: 15px;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 9997;
+      }
+    }
     .top-menu {
       display: flex;
       justify-content: space-between;
@@ -76,6 +95,25 @@ header {
         top: 25px;
         width: 140px;
         height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 9997;
+      }
+    }
+    .sml-logo {
+      img {
+        object-fit: cover;
+        object-position: 148px 0;
+
+        position: fixed;
+        margin-left: -150px;
+        top: 15px;
+        width: 200px;
+        height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
