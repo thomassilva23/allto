@@ -21,7 +21,7 @@ const IndexPage = () => {
             $(function() { var logo = $(".logo"); $(window).scroll(function() {
               var scroll = $(window).scrollTop();
             
-                if (scroll > 1000) {
+                if (scroll > 700) {
                   if(!logo.hasClass("sml-logo")) {
                     logo.hide();
                     logo.removeClass("logo").addClass("sml-logo").fadeIn( "slow");
