@@ -60,18 +60,17 @@ header {
         border: none;
         cursor: pointer;
         z-index: 9997;
+        transition: 2s;
+        transform-origin: 50%, 50%;
       }
     }
-    .sml-logo {
+    .logo_change {
       img {
-        object-fit: cover;
-        object-position: 148px 0;
-
         position: fixed;
-        margin-left: -250px;
-        top: 15px;
-        width: 200px;
-        height: 100px;
+        margin-left: -150px;
+        top: 20px;
+        width: 70px;
+        height: 60px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -79,6 +78,8 @@ header {
         border: none;
         cursor: pointer;
         z-index: 9997;
+        transition: 2s;
+        transform-origin: 50%, 50%;
       }
     }
     .top-menu {
@@ -103,6 +104,8 @@ header {
         border: none;
         cursor: pointer;
         z-index: 9997;
+        transition: 2s;
+        transform-origin: 50%, 50%;
       }
     }
     .logo_change {
@@ -111,7 +114,7 @@ header {
         margin-left: 0px;
         top: 25px;
         width: 70px;
-        height: 70px;
+        height: 60px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -119,6 +122,8 @@ header {
         border: none;
         cursor: pointer;
         z-index: 9997;
+        transition: 2s;
+        transform-origin: 50%, 50%;
       }
     }
     .top-menu {
