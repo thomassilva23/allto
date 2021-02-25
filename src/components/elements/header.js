@@ -13,19 +13,22 @@ const Header = () => {
         {/*função logo*/}
         <script type="text/javascript">{`
         {
-          $(window).on('scroll', function(){
-            if($(window).scrollTop() > 700){
-              $('.logo').hide();
-              $('.logo').removeClass('logo');
-                $('.logo').addClass('logo_change').fadeIn("slow");
-                $('#logo_img').attr('src', '/static/allto.icon.semfundo-33d28a632ea797eb194a5809218a07a6.png');
-            }else{
-                $('.logo').removeClass('logo_change');
-                $('.logo').addClass('logo').fadeIn("slow");
-                $('#logo_img').attr('src', '/static/allto.semfundo-f68c1142a0e319a28a191f8e0d6a7412.png');
+          
+          var logo = $(".logo"); $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+      
+          if (scroll > 700) {
+            if(!logo.hasClass("sml-logo")) {
+              logo.removeClass("logo").addClass("logo_change").fadeIn( "slow");
+              $('#logo_img').attr('src', '/static/allto.icon.semfundo-33d28a632ea797eb194a5809218a07a6.png');
             }
-        }
-       )
+          } else {
+            if(!logo.hasClass("logo")) {
+              logo.removeClass("sml-logo").addClass("logo").fadeIn( "slow");
+              $('#logo_img').attr('src', '/static/allto.semfundo-f68c1142a0e319a28a191f8e0d6a7412.png');
+            }
+          }      
+        });
         }`}</script>
       </Helmet>
       <header>
