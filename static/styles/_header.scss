@@ -23,6 +23,7 @@ header {
         z-index: 9997;
       }
     }
+
     .top-menu {
       display: flex;
       justify-content: space-between;
@@ -104,16 +105,13 @@ header {
         z-index: 9997;
       }
     }
-    .sml-logo {
+    .logo_change {
       img {
-        object-fit: cover;
-        object-position: 148px 0;
-
         position: fixed;
-        margin-left: -150px;
-        top: 15px;
-        width: 200px;
-        height: 100px;
+        margin-left: 0px;
+        top: 25px;
+        width: 70px;
+        height: 70px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;

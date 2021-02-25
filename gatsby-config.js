@@ -49,6 +49,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     {
