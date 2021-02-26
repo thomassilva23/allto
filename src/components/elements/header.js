@@ -29,35 +29,6 @@ class Header extends React.Component {
   }
 
   render() {
-    /*
-    var logo = $(".logo");
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop()
-
-      if (window.innerWidth >= 700) {
-        if (logo.hasClass("logo")) {
-          logo
-            .removeClass("logo")
-            .addClass("logo_change")
-            .fadeIn("slow")
-          $("#logo_img").attr(
-            "src",
-            "/static/allto.icon.semfundo-33d28a632ea797eb194a5809218a07a6.png"
-          )
-        }
-      } else {
-        if (logo.hasClass("logo_change")) {
-          logo
-            .removeClass("logo_change")
-            .addClass("logo")
-            .fadeIn("slow")
-          $("#logo_img").attr(
-            "src",
-            "/static/allto.semfundo-f68c1142a0e319a28a191f8e0d6a7412.png"
-          )
-        }
-      }
-    })*/
     return (
       <>
         <header>
