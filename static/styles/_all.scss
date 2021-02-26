@@ -103,34 +103,6 @@ body {
       z-index: 100;
     }
   }
-  .thanks_page {
-    background-color: $azul_escuro;
-    font-family: $font_family;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 3%;
-    margin: 20% auto;
-    h1 {
-      font-size: 30px;
-      margin-bottom: 2%;
-    }
-    p {
-      font-size: 20px;
-      line-height: 40px;
-    }
-    a {
-      color: #fff;
-
-      &:hover {
-        color: $azul_hover;
-      }
-    }
-    ul {
-      margin-bottom: 100%;
-    }
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -248,34 +220,6 @@ body {
       margin-top: 16px;
     }
   }
-  .thanks_page {
-    background-color: $azul_escuro;
-    font-family: $font_family;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 3%;
-    margin: 5% auto;
-    h1 {
-      font-size: 30px;
-      margin-bottom: 2%;
-    }
-    p {
-      font-size: 20px;
-      line-height: 40px;
-    }
-    a {
-      color: #fff;
-
-      &:hover {
-        color: $azul_hover;
-      }
-    }
-    ul {
-      margin-bottom: 50%;
-    }
-  }
 }
 @media only screen and (min-width: 1900px) {
   body {
@@ -379,38 +323,5 @@ body {
     .whatsapp-icon {
       margin-top: 16px;
     }
-  }
-  .thanks_page {
-    background-color: $azul_escuro;
-    font-family: $font_family;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 3%;
-    margin: 10% auto;
-    h1 {
-      font-size: 40px;
-      margin-bottom: 3%;
-    }
-    p {
-      font-size: 30px;
-      line-height: 40px;
-      margin-bottom: 5%;
-    }
-    a {
-      color: #fff;
-
-      &:hover {
-        color: $azul_hover;
-      }
-    }
-    ul {
-      margin-bottom: 15%;
-    }
-  }
-  .form_div {
-    display: none;
-    color: green;
   }
 }

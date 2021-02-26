@@ -6,7 +6,7 @@ form {
   form {
     width: 80%;
     div.input_form {
-      width: 350px;
+      width: 300px;
       margin: 50px auto;
       background: transparent;
       font-size: 20px;
@@ -55,16 +55,16 @@ form {
       }
     }
     div.data_form {
-      margin: 10px;
+      margin: -20px auto;
       margin-right: -70px;
       color: #fff;
       text-align: center;
 
       h2 {
-        font-size: 25px;
+        font-size: 20px;
       }
       p {
-        font-size: 20px;
+        font-size: 18px;
 
         text-align: center;
       }
@@ -115,6 +115,37 @@ form {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+    }
+  }
+  .thanks_page {
+    font-family: $font_family;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+    margin: 5% auto;
+    margin-top: 20%;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 40px;
+      text-align: center;
+      a {
+        color: #fff;
+
+        &:hover {
+          color: $azul_hover;
+        }
+        &:visited {
+          color: #fff;
+        }
+      }
+    }
+    ul {
+      margin-bottom: 50%;
     }
   }
 }
@@ -256,6 +287,37 @@ form {
       user-select: none;
     }
   }
+  .thanks_page {
+    font-family: $font_family;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+    margin: 5% auto;
+    margin-top: 20%;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 40px;
+      text-align: center;
+      a {
+        color: #fff;
+
+        &:hover {
+          color: $azul_hover;
+        }
+        &:visited {
+          color: #fff;
+        }
+      }
+    }
+    ul {
+      margin-bottom: 50%;
+    }
+  }
 }
 @media only screen and (min-width: 1900px) {
   form {
@@ -381,6 +443,40 @@ form {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+    }
+  }
+  .thanks_page {
+    font-family: $font_family;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+    margin: 10% auto;
+    h1 {
+      font-size: 40px;
+      margin-bottom: 3%;
+    }
+    p {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 5%;
+    }
+    a {
+      color: #fff;
+
+      &:hover {
+        color: $azul_hover;
+      }
+      &:visited {
+        color: #fff;
+      }
+      &:active {
+        color: #fff;
+      }
+    }
+    ul {
+      margin-bottom: 15%;
     }
   }
 }
