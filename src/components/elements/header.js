@@ -6,6 +6,7 @@ class Header extends React.Component {
     super()
     this.state = {
       className: "logo",
+      src: "/images/logos/allto.semfundo.png",
     }
   }
   handleScroll() {
