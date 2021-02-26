@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-import logo_header from "../../../static/images/logos/allto.semfundo.png"
 
 class Header extends React.Component {
   constructor() {
