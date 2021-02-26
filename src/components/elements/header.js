@@ -12,13 +12,13 @@ class Header extends React.Component {
     if (document.documentElement.scrollTop > 700) {
       this.setState({
         className: "logo_change",
-        src: "/static/allto.icon.semfundo-33d28a632ea797eb194a5809218a07a6.png",
+        src: "/images/logos/allto.icon.semfundo.png",
       })
     }
     if (document.documentElement.scrollTop < 700) {
       this.setState({
         className: "logo",
-        src: "/static/allto.semfundo-f68c1142a0e319a28a191f8e0d6a7412.png",
+        src: "/images/logos/allto.semfundo.png",
       })
     }
   }
