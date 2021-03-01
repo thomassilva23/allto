@@ -9,11 +9,6 @@ class ContactForm extends React.Component {
       view: "form",
     }
   }
-  /*handleClick(e) {
-    this.setState({
-      view: "thanks",
-    })
-  }*/
 
   submited = event => {
     event.preventDefault()
@@ -21,6 +16,7 @@ class ContactForm extends React.Component {
       view: "thanks",
     })
   }
+
   render() {
     if (this.state.view === "form")
       return (
