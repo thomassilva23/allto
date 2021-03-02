@@ -29,7 +29,6 @@ html {
       position: sticky;
       top: 0;
       overflow: hidden;
-      box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.4);
     }
     figure::after {
       content: "";
@@ -51,9 +50,8 @@ html {
       margin: 0 0 10vh auto;
       position: sticky;
       top: 0;
-      // overflow: hidden;
+      overflow: hidden;
       padding: 5vmin;
-      box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
     }
     figure:nth-of-type(1),
     section:nth-of-type(1) {
@@ -61,11 +59,9 @@ html {
     }
     figure:nth-of-type(2n) {
       margin: 0 0 10vh auto;
-      box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
     }
     section:nth-of-type(2n) {
       margin: 0 auto 10vh 0;
-      box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.4);
     }
     figure:last-of-type,
     section:last-of-type {
@@ -80,9 +76,6 @@ html {
       left: 0;
       width: 7vmin;
       height: 7vmin;
-      transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
-      clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
-      box-shadow: -4px -2px 8px rgba(0, 0, 0, 0.4);
       border-radius: 1.5vmin 0 0 0;
     }
     section:nth-of-type(2n)::before {
@@ -97,12 +90,8 @@ html {
       right: 45%;
       bottom: 5vmin;
       left: 5vmin;
-      pointer-events: none;
     }
-    section:nth-of-type(2n):after {
-      right: 5vmin;
-      left: 45%;
-    }
+    section:nth-of-type(2n):after,
     figure img {
       min-width: 100%;
       min-height: 100%;
