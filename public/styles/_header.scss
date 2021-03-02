@@ -11,8 +11,8 @@ header {
     justify-content: center;
     .logo {
       img {
-        margin: 5% 18%;
-        position: fixed;
+        margin: 5% 50%;
+        position: relative;
         width: 140px;
         height: 70px;
         display: flex;
@@ -20,7 +20,11 @@ header {
         justify-content: space-around;
         background: transparent;
         border: none;
-        z-index: 9997;
+      }
+    }
+    .logo_change {
+      img {
+        display: none;
       }
     }
 

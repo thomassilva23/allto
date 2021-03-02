@@ -20,13 +20,13 @@ const ContatoForm = styled.nav`
   text-align: center;
   height: 100vh;
   background: #001a43;
-  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   transition: all 1500ms;
   transform: ${({ nav }) => (nav ? "translateY(0)" : "translateY(100%)")};
   opacity: ${({ nav }) => (nav ? "1" : "0")};
+  position: fixed;
   z-index: 9998;
 
   ul {
@@ -101,26 +101,23 @@ const ServiceSlider = () => {
                       animateOut="bounceOutRight"
                       duration={3}
                     >
-                      <p>
-                        {description}
-
-                        <div id="btn" nav={nav} onClick={() => showNav(!nav)}>
-                          <span class="noselect">Saiba mais</span>
-                          <div id="circle" />
-                        </div>
-                        <ContatoForm nav={nav}>
-                          <ContactForm />
-                          <div
-                            id="btn_close"
-                            nav={nav}
-                            onClick={() => showNav(!nav)}
-                          >
-                            <span class="noselectClose">X</span>
-                            <div id="circle" />
-                          </div>
-                        </ContatoForm>
-                      </p>
+                      <p>{description}</p>
+                      <div id="btn" nav={nav} onClick={() => showNav(!nav)}>
+                        <span className={"noselect"}>Saiba mais</span>
+                        <div id="circle" />
+                      </div>
                     </ScrollAnimation>
+                    <ContatoForm nav={nav}>
+                      <ContactForm />
+                      <div
+                        id="btn_close"
+                        nav={nav}
+                        onClick={() => showNav(!nav)}
+                      >
+                        <span className={"noselectClose"}>X</span>
+                        <div id="circle" />
+                      </div>
+                    </ContatoForm>
                   </div>
                 </section>
               </React.Fragment>

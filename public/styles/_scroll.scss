@@ -16,22 +16,6 @@ html {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-    border: 0 none;
-    position: relative;
-  }
-  html {
-    background: #000;
-    box-sizing: border-box;
-    font-family: "Vollkorn", sans-serif;
-    font-size: 1rem;
-    color: #000;
-  }
   body > article {
     display: flex;
     flex-wrap: wrap;
@@ -39,30 +23,44 @@ html {
   .service {
     figure {
       background: #eee;
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto 10vh 0;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
       box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.4);
     }
     figure::after {
       content: "";
       position: absolute;
+      top: 5vmin;
+      right: 5vmin;
+      bottom: 5vmin;
+      left: 45%;
       pointer-events: none;
     }
     figure:nth-of-type(2n)::after {
+      right: 45%;
       left: 5vmin;
     }
     section {
-      margin: 0 auto 10vh 0;
       background: $azul_medio;
+      width: 100%;
+      height: 100vh;
+      margin: 0 0 10vh auto;
+      position: sticky;
       top: 0;
+      // overflow: hidden;
       padding: 5vmin;
       box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
     }
-    figure:nth-of-type(1) {
-      box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
-    }
+    figure:nth-of-type(1),
     section:nth-of-type(1) {
-      margin: 0 auto 10vh 0;
+      width: 100%;
     }
     figure:nth-of-type(2n) {
+      margin: 0 0 10vh auto;
       box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
     }
     section:nth-of-type(2n) {
@@ -78,6 +76,10 @@ html {
       z-index: 1;
       content: "";
       position: absolute;
+      top: 50%;
+      left: 0;
+      width: 7vmin;
+      height: 7vmin;
       transform: translate(calc(-50% + 1px), -50%) rotate(-45deg);
       clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
       box-shadow: -4px -2px 8px rgba(0, 0, 0, 0.4);
@@ -91,6 +93,10 @@ html {
     section::after {
       content: "";
       position: absolute;
+      top: 5vmin;
+      right: 45%;
+      bottom: 5vmin;
+      left: 5vmin;
       pointer-events: none;
     }
     section:nth-of-type(2n):after {
@@ -98,9 +104,10 @@ html {
       left: 45%;
     }
     figure img {
-      width: 100%;
-      margin: 0 auto;
-      flex-direction: column;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
     section > div {
       display: flex;
@@ -112,13 +119,13 @@ html {
     h1 {
       color: #fff;
       margin: 7% auto;
-      font-size: 40px;
+      font-size: 35px;
       text-transform: uppercase;
     }
     h2 {
       color: #fff;
       margin: 0 auto;
-      font-size: calc(5vmin + 3vmax);
+      font-size: 30px;
       text-align: center;
       font-weight: 700;
       line-height: 1;
@@ -129,7 +136,7 @@ html {
       text-align: center;
       width: 100%;
       font-weight: 200;
-      font-size: calc(1.5vmin + 1.75vmax);
+      font-size: 20px;
       margin: 0 auto;
     }
     a {
@@ -147,14 +154,15 @@ html {
   //Botão fechar form
   #btn_close {
     margin: 0 auto;
-    width: 60px;
-    height: 40px;
+    width: 45px;
+    height: 30px;
     background: $azul_claro;
     border: none;
     border-radius: 10px;
     color: #eee;
-    font-size: 30px;
+    font-size: 28px;
     position: relative;
+    bottom: 40%;
     transition: 1s;
     -webkit-tap-highlight-color: transparent;
     display: flex;
@@ -162,7 +170,6 @@ html {
     justify-content: center;
     text-align: center;
     cursor: pointer;
-    padding-top: 0;
   }
 
   #btn_close #circle {

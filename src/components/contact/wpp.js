@@ -6,7 +6,7 @@ const WhatsappApi = () => (
   <div>
     <a
       href="https://wa.me/5551996981297"
-      class="whatsapp_float"
+      className={"whatsapp_float"}
       target="_blank"
       rel="noopener noreferrer"
     >
