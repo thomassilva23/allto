@@ -1,21 +1,34 @@
 backend:
   name: github
   repo: Mainfast/allto
-  branch: master
+  branch: main
   site_domain: https://allto-digital.netlify.app/
 
 publish_mode: editorial_workflow
-media_folder: "static/images"
-public_folder: "/images"
+media_folder: "static/images/clients"
+public_folder: "/images/clients"
 
 collections:
-  - name: "clientes" # Used in routes, e.g., /admin/collections/blog
+  - name: "clients" # Used in routes, e.g., /admin/collections/blog
     label: "Clientes" # Used in the UI
-    folder: "content" # The path to the folder where the documents are stored
+    folder: "clients" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: 'YYYY-MM-DD hh:mm:ss'}
+      - {label: "image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "service" # Used in routes, e.g., /admin/collections/blog
+    label: "Serviços" # Used in the UI
+    folder: "service" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format: 'YYYY-MM-DD hh:mm:ss'}
       - {label: "image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
