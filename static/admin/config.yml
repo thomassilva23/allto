@@ -2,6 +2,8 @@ backend:
   name: github
   repo: Mainfast/allto
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
   site_domain: https://allto-digital.netlify.app/
 
 site_url: https://allto-digital.netlify.app/
