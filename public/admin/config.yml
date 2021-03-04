@@ -2,11 +2,15 @@ backend:
   name: github
   repo: Mainfast/allto
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
   site_domain: https://allto-digital.netlify.app/
 
+site_url: https://allto-digital.netlify.app/
+
 publish_mode: editorial_workflow
-media_folder: "static/images/clients"
-public_folder: "/images/clients"
+media_folder: "static/images"
+public_folder: "/images"
 
 collections:
   - name: "clients" # Used in routes, e.g., /admin/collections/blog
