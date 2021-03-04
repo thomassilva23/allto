@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: Mainfast/allto
+  name: git-gateway
   branch: main
   base_url: https://api.netlify.com
   auth_endpoint: auth
