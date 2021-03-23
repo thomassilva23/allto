@@ -2,11 +2,6 @@ backend:
   name: github
   repo: mainfast/allto
   branch: main
-  api_root: https://api.github.com
-  site_domain: https://allto.digital
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-  cms_label_prefix: netlify-cms/
 
 publish_mode: editorial_workflow
 media_folder: "static/images"
