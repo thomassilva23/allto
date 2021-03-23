@@ -162,12 +162,13 @@ form {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   form {
     div.input_form {
-      max-width: 400px;
-      margin: 0 auto 100px;
-      padding: 16px;
+      max-width: 100%;
+      width: 400px;
+      margin: 0 auto -200px;
+      padding: 0;
       background: transparent;
       font-size: 30px;
       float: left;
@@ -218,7 +219,8 @@ form {
       justify-content: center;
       align-items: center;
       float: right;
-      margin: 50px auto;
+      margin: 0;
+      margin-right: -100px;
       color: #fff;
 
       h2 {

@@ -395,7 +395,7 @@ html {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   body > article {
     display: flex;
     flex-wrap: wrap;
@@ -432,7 +432,7 @@ html {
       position: sticky;
       top: 0;
       // overflow: hidden;
-      padding: 5vmin;
+      padding: 1vmin;
       box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.4);
     }
     figure:nth-of-type(1),
