@@ -2,7 +2,6 @@ backend:
   name: github
   repo: mainfast/allto
   branch: main
-  site_domain: https://allto.digital
 
 publish_mode: editorial_workflow
 media_folder: "static/images"
