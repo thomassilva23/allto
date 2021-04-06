@@ -4,6 +4,6 @@ title: 7Way
 description:
   Oferecer comercialização de máquinas e equipamentos, e também, uma diferenciação no atendimento às novas necessidades de mercado.",
   social
-image: "./images/clients/way.png"
+image: "static/images/clients/way.png"
 url: "http://7way.com.br/pt/"
 ---
