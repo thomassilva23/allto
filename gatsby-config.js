@@ -87,6 +87,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-netlify-identity-widget",
+      options: {
+        container: "#netlify-modal",
+      },
+    },
     `gatsby-plugin-netlify-cms`,
   ],
 }

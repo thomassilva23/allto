@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
 import ClientSlider from "../components/body/slider"
@@ -29,7 +29,6 @@ const IndexPage = () => {
               }}
             />
           </h1>
-
           <br />
         </div>
 
