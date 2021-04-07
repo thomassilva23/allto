@@ -12,6 +12,15 @@ class ContactForm extends React.Component {
 
   submited = event => {
     event.preventDefault()
+    fetch("/", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ description: this.state.description }),
+    })
+
     this.setState({
       view: "thanks",
     })
@@ -24,13 +33,11 @@ class ContactForm extends React.Component {
           <form
             id="ajax_form"
             name="contato"
-            method="POST"
-            netlify-honeypot="bot-field"
+            method="post"
             data-netlify="true"
             onSubmit={this.submited}
           >
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="contato" value="contato" />
+            <input type="hidden" name="form-name" value="contato" />
 
             <div className={"container"}>
               <div className={"input_form"}>
