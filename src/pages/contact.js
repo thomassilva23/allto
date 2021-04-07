@@ -12,15 +12,6 @@ class ContactForm extends React.Component {
 
   submited = event => {
     event.preventDefault()
-    fetch("/", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ description: this.state.description }),
-    })
-
     this.setState({
       view: "thanks",
     })
@@ -33,7 +24,7 @@ class ContactForm extends React.Component {
           <form
             id="ajax_form"
             name="contato"
-            method="post"
+            method="POST"
             data-netlify="true"
             onSubmit={this.submited}
           >
