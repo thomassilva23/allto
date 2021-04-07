@@ -30,7 +30,7 @@ class ContactForm extends React.Component {
             onSubmit={this.submited}
           >
             <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contato" />
+            <input type="hidden" name="contato" value="contato" />
 
             <div className={"container"}>
               <div className={"input_form"}>
