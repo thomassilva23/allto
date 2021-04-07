@@ -3,7 +3,7 @@ module.exports = {
     title: "Allto Digital",
     description: `Conectando você`,
     author: `@thomas`,
-    siteUrl: `https://allto.digital`,
+    siteUrl: `https://allto-digital.netlify.app`,
   },
   plugins: [
     {
