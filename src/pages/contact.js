@@ -22,10 +22,9 @@ class ContactForm extends React.Component {
       return (
         <>
           <form
-            id="ajax_form"
-            name="contato"
-            method="POST"
             data-netlify="true"
+            name="contato"
+            method="post"
             onSubmit={this.submited}
           >
             <input type="hidden" name="form-name" value="contato" />
@@ -34,18 +33,18 @@ class ContactForm extends React.Component {
               <div className={"input_form"}>
                 <input
                   type="text"
-                  name="field1"
+                  name="Nome"
                   id="name"
                   placeholder="Seu nome"
                 />
                 <input
                   type="email"
-                  name="field2"
+                  name="Email"
                   id="email"
                   placeholder="Email"
                 />
                 <textarea
-                  name="field3"
+                  name="Mensagem"
                   id="message"
                   placeholder="Escreva sua mensagem"
                 />
