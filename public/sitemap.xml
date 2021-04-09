@@ -5,4 +5,5 @@
 <url> <loc>https://allto.digital/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://allto.digital/privacy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://allto.digital/terms/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://allto.digital/thanks/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
