@@ -11,7 +11,7 @@ class ContactForm extends React.Component {
   render() {
     return (
       <>
-        <form data-netlify="true" name="contato" method="post" target="_blank">
+        <form data-netlify="true" name="contato" method="post">
           <input type="hidden" name="form-name" value="contato" />
 
           <div className={"container"}>
