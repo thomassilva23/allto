@@ -116,35 +116,6 @@ form {
       user-select: none;
     }
   }
-  .thanks_page {
-    font-family: $font_family;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 20%;
-    h1 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 20px;
-      line-height: 40px;
-      text-align: center;
-      a {
-        color: #fff;
-
-        &:hover {
-          color: $azul_hover;
-        }
-        &:visited {
-          color: #fff;
-        }
-      }
-    }
-    ul {
-      margin-bottom: 50%;
-    }
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -283,35 +254,7 @@ form {
       user-select: none;
     }
   }
-  .thanks_page {
-    font-family: $font_family;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 20%;
-    h1 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 20px;
-      line-height: 40px;
-      text-align: center;
-      a {
-        color: #fff;
-
-        &:hover {
-          color: $azul_hover;
-        }
-        &:visited {
-          color: #fff;
-        }
-      }
-    }
-    ul {
-      margin-bottom: 50%;
-    }
-  }
+  
 }
 @media only screen and (min-width: 1900px) {
   form {
@@ -436,36 +379,6 @@ form {
       user-select: none;
     }
   }
-  .thanks_page {
-    font-family: $font_family;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding: 20%;
-    h1 {
-      font-size: 40px;
-      margin-bottom: 3%;
-    }
-    p {
-      font-size: 30px;
-      line-height: 40px;
-    }
-    a {
-      color: #fff;
-
-      &:hover {
-        color: $azul_hover;
-      }
-      &:visited {
-        color: #fff;
-      }
-      &:active {
-        color: #fff;
-      }
-    }
-    ul {
-      margin-bottom: 15%;
-    }
-  }
+  
 }
+

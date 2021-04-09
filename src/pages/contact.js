@@ -3,15 +3,15 @@ import React from "react"
 import Icons from "../components/Icons"
 
 class ContactForm extends React.Component {
-  submited = event => {
-    event.preventDefault()
-    window.location.href = "/obrigado"
-  }
-
   render() {
     return (
       <>
-        <form data-netlify="true" name="contato" method="post">
+        <form
+          data-netlify="true"
+          name="contato"
+          method="POST"
+          action="/obrigado"
+        >
           <input type="hidden" name="form-name" value="contato" />
 
           <div className={"container"}>
@@ -58,7 +58,11 @@ class ContactForm extends React.Component {
               </ul>
             </div>
           </div>
-          <button id="btn_send" type="submit" onClick={this.submited}>
+          <button
+            id="btn_send"
+            type="submit"
+            onclick="window.location.href = '/obrigado';"
+          >
             <span class="noselect">Enviar</span>
             <div id="circle" />
           </button>
