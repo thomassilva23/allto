@@ -4,7 +4,6 @@ import Icons from "../components/Icons"
 
 class ContactForm extends React.Component {
   submited = event => {
-    event.preventDefault()
     window.location.href = "/obrigado"
   }
 
