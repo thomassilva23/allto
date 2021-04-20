@@ -13,7 +13,6 @@ class ContactForm extends React.Component {
         <form
           name="contato"
           method="post"
-          action="mailto:thomas@allto.digital"
           netlify-honeypot="bot-field"
           data-netlify="true"
           encType="text/plain"
