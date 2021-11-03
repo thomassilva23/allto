@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
 
+site_url: https://allto-digital.netlify.app
+
 publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
