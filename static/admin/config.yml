@@ -1,7 +1,5 @@
 backend:
-  name: github
-  repo: Mainfast/allto
-  branch: main
+  name: git-gateway
 
 publish_mode: editorial_workflow
 media_folder: "static/images"
