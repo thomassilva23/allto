@@ -1,8 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: mainfast/allto-digital
   branch: main
-
-site_url: https://allto-digital.netlify.app/
 
 publish_mode: editorial_workflow
 media_folder: "static/images"
