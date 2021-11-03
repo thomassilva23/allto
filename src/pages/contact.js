@@ -1,33 +1,47 @@
 import React from "react"
 
+import emailjs from "emailjs-com"
+
+import { Button, Form, Input, Container, TextArea } from "semantic-ui-react"
+
 import Icons from "../components/Icons"
 
 class ContactForm extends React.Component {
-  submited = event => {
-    window.location.href = "/obrigado"
-  }
-
   render() {
+
+    function sendEmail(event) {
+      event.preventDefault()
+  
+      emailjs
+        .sendForm(
+          "service_4ydohfe",
+          "template_nzmil1v",
+          event.target,
+          "user_OT4Z9rb1ENe582IVmyysq"
+        )
+        .then(
+          result => {
+            console.log(result.text)
+          },
+          error => {
+            console.log(error.text)
+          }
+        )
+    }
     return (
       <>
         <form
           name="contato"
           method="post"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-          encType="text/plain"
+          onSubmit={sendEmail}
         >
           <input type="hidden" name="form-name" value="contato" />
 
           <div className={"container"}>
             <div className={"input_form"}>
-              <input type="text" name="Nome" id="name" placeholder="Seu nome" />
-              <input type="email" name="Email" id="email" placeholder="Email" />
-              <textarea
-                name="Mensagem"
-                id="message"
-                placeholder="Escreva sua mensagem"
-              />
+              <Form.Field control={Input} label="Name" name="name" id="name" placeholder="Seu nome" required/>
+              <Form.Field control={Input} label="Email" type="email" name="email" id="email" placeholder="Email" required/>
+              <Form.Field control={TextArea} label="Message" name="message" id="message" placeholder="Escreva sua mensagem" required />
             </div>
             <div className={"data_form"}>
               <h2>Contate-nos!</h2>
@@ -63,10 +77,10 @@ class ContactForm extends React.Component {
               </ul>
             </div>
           </div>
-          <button id="btn_send" type="submit" onClick={this.submited}>
-            <span class="noselect">Enviar</span>
+          <Button primary id="btn_send" type="submit" size="large" fluid>
+            <span className={"noselect"}>Enviar</span>
             <div id="circle" />
-          </button>
+          </Button>
         </form>
       </>
     )

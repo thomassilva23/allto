@@ -1,7 +1,13 @@
 backend:
-  name: github
-  repo: mainfast/allto-digital
+  name: git-gateway
+  repo: Mainfast/allto
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
   branch: main
+  site_domain: location.hostname
+  base_url: https://api.netlify.com
+  
 
 publish_mode: editorial_workflow
 media_folder: "static/images"

@@ -107,7 +107,7 @@ const ServiceSlider = () => {
                         <div id="circle" />
                       </div>
                     </ScrollAnimation>
-                    <ContatoForm nav={nav}>
+                    <ContatoForm nav={nav} action="https://www.flexyform.com/f/67339e94687de99499efc400e0da7dd98b8d9ef7">
                       <ContactForm />
                       <div
                         id="btn_close"
