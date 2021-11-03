@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: mainfast/allto-digital
+  repo: Mainfast/allto
   branch: main
 
 publish_mode: editorial_workflow
