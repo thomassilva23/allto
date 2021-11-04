@@ -10,6 +10,7 @@ const ClientSlider = () => {
     query ClientList {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/(clients)/" } }
+        sort: { fields: [frontmatter___date], order: ASC }
       ) {
         edges {
           node {
