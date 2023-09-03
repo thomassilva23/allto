@@ -13,7 +13,7 @@
     "dotenv": "^10.0.0",
     "emailjs-com": "^3.2.0",
     "ftp-deploy": "^2.4.1",
-    "gatsby": "^4.1.0",
+    "gatsby": "^4.25.7",
     "gatsby-cli": "^4.1.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-fontawesome-css": "^1.1.0",
